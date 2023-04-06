@@ -4,6 +4,7 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
        <link rel="stylesheet" type="text/css" href="css/style.css">
+       <script defer src="script.js"></script>
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
@@ -16,16 +17,16 @@
 
        <title>Marcela Passos Portfolio</title>
     </head>
-    <body>
+    <body id="about">
         <header>
             <h1>Marcela Passos</h1>
-            <a href="#maincontent">Skip to main content</a> 
+            <a href="#maincontent"class ="skip">Skip to main content</a> 
             <nav>
                 <ul class="nav_links">
-                    <li ><a href="about.html" aria-label="link to information about Marcela Passos">About Me</a></li>
-                    <li ><a href="artwork.html" aria-label="link to information about Marcela's artwork">Artwork</a></li>
-                    <li ><a href="UX.html" aria-label="link to information about Marcela's UX/UI design experience">UX/UI</a></li>
-                    <li ><a href="influences.html" aria-label="link to see Marcela's inspirations">Influences</a></li>
+                    <li><a data-active="about" href="about.html" aria-label="link to information about Marcela Passos">About Me</a></li>
+                    <li ><a data-active="artwork" href="artwork.html" aria-label="link to information about Marcela's artwork">Artwork</a></li>
+                    <li ><a data-active="ux" href="UX.html" aria-label="link to information about Marcela's UX/UI design experience">UX/UI</a></li>
+                    <li ><a data-active="influences"  href="influences.html" aria-label="link to see Marcela's inspirations">Influences</a></li>
                 </ul>
             </nav>
         </header>
@@ -72,15 +73,15 @@
                 </div>
                 <div class="card">
                     <img id="image8" src="images/mexico.jpeg" alt="Two women and two men smiling for a selfie in front of a green tree"/>
-                    <p>  This is me and my family (minus my mom)</p>
+                    <p>  This is me and my family on vacation in Mexico</p>
                 </div>
                 <div class="card">
                     <img id="image9" src="images/mountains.jpg" alt="Happy girl with arms out sitting on a rock in front of a mountain sunset "/>
-                    <p>  I went Bouldering(a type of climbing without ropes and using crash pads) in Utah and experienced the most beutiful sunset of my life.</p>
+                    <p>  I went Bouldering (climbing without ropes and using crash pads) in Utah and experienced the most beutiful sunset of my life.</p>
                 </div>
                 <div class="card">
                     <img id="image10" src="images/peanut.jpg" alt="Five people in a line with backpacks and crashpads and a large jar of peanutbutter"/>
-                    <p>  Besides climbing and hiking, I also love going thrifting and to museums(especially of the art varriety).</p>
+                    <p>  Besides climbing and hiking, I also love going thrifting and to museums  (especially those of the art varriety).</p>
                 </div>
                 <div class="card">
                     <img id="image13" src="images/Utah.jpg" alt="Girl with back towards the camera hiking in the mountains"/>

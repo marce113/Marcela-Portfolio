@@ -2,20 +2,32 @@
 <html>
 <head>
   <title>Marcela's UX/UI Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="script.js"></script>
 </head>
-<body>
+<body id="ux">
     <header>
         <h1>Marcela Passos</h1>
-        <div class="skip"><a href="/about.html#maincontent">Skip to main content</a></div>        <nav>
+        <div class="skip"><a href="/about.html#maincontent">Skip to main content</a></div>        
+        <nav>
             <ul class="nav_links">
-                <li ><a href="about.html" aria-label="link to information about Marcela Passos">About Me</a></li>
-                <li ><a href="artwork.html" aria-label="link to information about Marcela's artwork">Artwork</a></li>
-                <li ><a href="UX.html" aria-label="link to information about Marcela's UX/UI design experience">UX/UI</a></li>
-                <li ><a href="influences.html" aria-label="link to see Marcela's inspirations">Influences</a></li>
+                <li><a data-active="about" href="about.html" aria-label="link to information about Marcela Passos">About Me</a></li>
+                <li ><a data-active="artwork" href="artwork.html" aria-label="link to information about Marcela's artwork">Artwork</a></li>
+                <li ><a data-active="ux" href="UX.html" aria-label="link to information about Marcela's UX/UI design experience">UX/UI</a></li>
+                <li ><a data-active="influences"  href="influences.html" aria-label="link to see Marcela's inspirations">Influences</a></li>
             </ul>
+
         </nav>
     </header>
     <main class="ux" id="ux">
+        <div id="maincontent" class="ux" tabindex="-1">
+            <h2 id = "influences"> UX/UI Design</h2>
+            <div
+            <p>See This Website</p>
+
+            </div>
         
     </main>
 

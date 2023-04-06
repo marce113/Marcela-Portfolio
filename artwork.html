@@ -5,33 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/html5reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script defer src="script.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Marcela's Art</title>
 </head>
-<body>
+<body id="artwork">
     <header>
         <h1>Marcela Passos</h1>
-        <div class="skip"><a href="/about.html#maincontent">Skip to main content</a></div>
+        <a href="#maincontent"class ="skip">Skip to main content</a>
         <nav>
             <ul class="nav_links">
-                <li ><a href="about.html" aria-label="link to information about Marcela Passos">About Me</a></li>
-                <li ><a href="artwork.html" aria-label="link to information about Marcela's artwork">Artwork</a></li>
-                <li ><a href="UX.html" aria-label="link to information about Marcela's UX/UI design experience">UX/UI</a></li>
-                <li ><a href="influences.html" aria-label="link to see Marcela's inspirations">Influences</a></li>
+                <li><a data-active="about" href="about.html" aria-label="link to information about Marcela Passos">About Me</a></li>
+                <li ><a data-active="artwork" href="artwork.html" aria-label="link to information about Marcela's artwork">Artwork</a></li>
+                <li ><a data-active="ux" href="UX.html" aria-label="link to information about Marcela's UX/UI design experience">UX/UI</a></li>
+                <li ><a data-active="influences"  href="influences.html" aria-label="link to see Marcela's inspirations">Influences</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="artwork" id = "artwork">
+        <div id="maincontent" class="artwork" tabindex="-1">
         <h2 id = "gallery">My Artwork</h2>
         <div class="gallery">
             <div class = "art">
-                <img class="art_img1" src="/artImages/alexisDemi.jpg" alt="digital drawing of Alexis Demi's face with green eyeshadow and a sassy expression" />
+                <img class = "art_img12" src="artImages/spaceGirl.jpg" alt="digital drawing of lady with purple hair and a fancy dress in space with a fishbowl on her head"/>
                 <div class = "art_overlay">
-                    <div class ="art_title">Portrait of Alexis Demi</div>
-                    <p class = "image_discription"> This Portrait was made using the Procreate app. The goal of this peice was to practice my portrature using a digital medium.</p>
+                    <div class = "art_title">Space Girl</div>
+                    <p class = "image_discription">This is a piece where I really wanted to experiment with fabric, making her sleeves quite full and puffy. I tried to keep the color palette pretty small, and used high contrasting colors to highlight her hair and the fish.</p>
                 </div>
             </div>
             <div class = "art">
@@ -84,10 +86,10 @@
                 </div>
             </div>
             <div class = "art">
-                <img class = "art_img9" src="artImages/sandra.jpg" alt="blue ink drawing of my grandmother in her 30s with a yellow background"/>
+                <img class = "art_img16" src="artImages/potHead.jpg" alt="digital drawing of magenta pot with a human face holding green plants with an orange background"/>
                 <div class = "art_overlay">
-                    <div class = "art_title">Sandra</div>
-                    <p class = "image_discription">Sandra is my Father's Mother who passed away when he was only 12. I have only seen my Grandmother in pictures, so I drew her from an old photo I have in my room</p>
+                    <div class = "art_title">Pot Head</div>
+                    <p class = "image_discription">I tried to make thi swithout using an external refrence. At first I hated it, but I went back and worked on it until I was happy with it.</p>
                 </div>
             </div>
             <div class = "art">
@@ -105,17 +107,45 @@
                 </div>
             </div>
             <div class = "art">
-                <img class = "art_img12" src="artImages/spaceGirl.jpg" alt="digital drawing of lady with purple hair and a fancy dress in space with a fishbowl on her head"/>
+                <img class="art_img1" src="/artImages/alexisDemi.jpg" alt="digital drawing of Alexis Demi's face with green eyeshadow and a sassy expression" />
                 <div class = "art_overlay">
-                    <div class = "art_title">Space Girl</div>
-                    <p class = "image_discription">This is a piece where I really wanted to experiment with fabric, making her sleeves quite full and puffy. I tried to keep the color palette pretty small, and used high contrasting colors to highlight her hair and the fish.</p>
+                    <div class ="art_title">Portrait of Alexis Demi</div>
+                    <p class = "image_discription"> This Portrait was made using the Procreate app. The goal of this peice was to practice my portrature using a digital medium.</p>
                 </div>
             </div>
             <div class = "art">
-                <img class = "art_img13" src="artImages/toolsComp.jpg" alt="abstract charcol drawing of shaded overlaping tools remeniscent of a volcano or topography"/>
+                <img class = "art_img17" src="artImages/ladyOfTheNight.JPG" alt="digital drawing of a lady with long black hair in a latex bikini and gloves in front of the full moon with a dark blue background"/>
                 <div class = "art_overlay">
-                    <div class = "art_title">Lava</div>
-                    <p class = "image_discription">This is another drawing from Drawing and Observation. In this drawing I took a sketch of overlaping tools and abstracted it.</p>
+                    <div class = "art_title">Lady of the Night</div>
+                    <p class = "image_discription"></p>
+                </div>
+            </div>
+            <div class = "art">
+                <img class = "art_img20" src="artImages/Pow.jpg" alt="drawing of a woman with blue skin laying on a pillow with a gun pointed in the background and a three headed cat"/>
+                <div class = "art_overlay">
+                    <div class = "art_title">Pow</div>
+                    <p class = "image_discription">Art has always been a way for me to express feelings too complex for words. In this piece, I try to vizualize the feeling of fear and helplessness.</p>
+                </div>
+            </div>
+            <div class = "art">
+                <img class = "art_img19" src="artImages/inOurDreams.jpg" alt="digital drawing of two green people holding each other with pink highlights and a dark blue background with constelation like bunnies"/>
+                <div class = "art_overlay">
+                    <div class = "art_title">In Our Dreams</div>
+                    <p class = "image_discription"></p>
+                </div>
+            </div>
+            <div class = "art">
+                <img class = "art_img18" src="artImages/kitties.jpg" alt="digital drawing of three cats sitting next to each other"/>
+                <div class = "art_overlay">
+                    <div class = "art_title">Three Kitties</div>
+                    <p class = "image_discription"></p>
+                </div>
+            </div>
+            <div class = "art">
+                <img class = "art_img21" src="artImages/Devine.jpg" alt="drawing of a woman with blue skin in the clouds during sunset. She is smiling and has big poofy hair"/>
+                <div class = "art_overlay">
+                    <div class = "art_title">Devine</div>
+                    <p class = "image_discription">This drawing aims to be a representation of devine femininity.</p>
                 </div>
             </div>
             <div class = "art">
@@ -133,54 +163,26 @@
                 </div>
             </div>
             <div class = "art">
-                <img class = "art_img16" src="artImages/potHead.jpg" alt="digital drawing of magenta pot with a human face holding green plants with an orange background"/>
+                <img class = "art_img9" src="artImages/sandra.jpg" alt="blue ink drawing of my grandmother in her 30s with a yellow background"/>
                 <div class = "art_overlay">
-                    <div class = "art_title">Pot Head</div>
-                    <p class = "image_discription">I tried to make thi swithout using an external refrence. At first I hated it, but I went back and worked on it until I was happy with it.</p>
+                    <div class = "art_title">Sandra</div>
+                    <p class = "image_discription">Sandra is my Father's Mother who passed away when he was only 12. I have only seen my Grandmother in pictures, so I drew her from an old photo I have in my room</p>
                 </div>
             </div>
             <div class = "art">
-                <img class = "art_img17" src="artImages/ladyOfTheNight.JPG" alt="digital drawing of a lady with long black hair in a latex bikini and gloves in front of the full moon with a dark blue background"/>
+                <img class = "art_img13" src="artImages/toolsComp.jpg" alt="abstract charcol drawing of shaded overlaping tools remeniscent of a volcano or topography"/>
                 <div class = "art_overlay">
-                    <div class = "art_title">Lady of the Night</div>
-                    <p class = "image_discription"></p>
+                    <div class = "art_title">Lava</div>
+                    <p class = "image_discription">This is another drawing from Drawing and Observation. In this drawing I took a sketch of overlaping tools and abstracted it.</p>
                 </div>
             </div>
-            <div class = "art">
-                <img class = "art_img18" src="artImages/kitties.jpg" alt="digital drawing of three cats sitting next to each other"/>
-                <div class = "art_overlay">
-                    <div class = "art_title">Three Kitties</div>
-                    <p class = "image_discription"></p>
-                </div>
-            </div>
-            <div class = "art">
-                <img class = "art_img19" src="artImages/inOurDreams.jpg" alt="digital drawing of two green people holding each other with pink highlights and a dark blue background with constelation like bunnies"/>
-                <div class = "art_overlay">
-                    <div class = "art_title">In Our Dreams</div>
-                    <p class = "image_discription"></p>
-                </div>
-            </div>
-            <div class = "art">
-                <img class = "art_img20" src="artImages/Pow.jpg" alt="drawing of a woman with blue skin laying on a pillow with a gun pointed in the background and a three headed cat"/>
-                <div class = "art_overlay">
-                    <div class = "art_title">Pow</div>
-                    <p class = "image_discription">Art has always been a way for me to express feelings too complex for words. In this piece, I try to vizualize the feeling of fear and helplessness.</p>
-                </div>
-            </div>
-            <div class = "art">
-                <img class = "art_img21" src="artImages/Devine.jpg" alt="drawing of a woman with blue skin in the clouds during sunset. She is smiling and has big poofy hair"/>
-                <div class = "art_overlay">
-                    <div class = "art_title">Devine</div>
-                    <p class = "image_discription">This drawing aims to be a representation of devine femininity.</p>
-                </div>
-            </div>
-            
+    
             
          
             
 
         </div>
-
+    </div>    
     </main>
         <footer>
             Contact me: marcelaopassos113@gmail.com
