@@ -9,7 +9,7 @@ body{
     padding: 0;
 }
 header{
-    background-color: #447bb7;
+    background-color: #205893;
     color: #ffffff;
     font-size: 16px;
     margin: 0;
@@ -40,7 +40,7 @@ h2{
     height: auto;
 }
 nav a{
-    color:#bcb3ff;
+    color: #ffffff;
     text-decoration: none;
     margin: 5px;
 }
@@ -48,6 +48,7 @@ nav a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #ffffff;
+    font-size: 18px;
     justify-items: center;
 }
 nav li:focus{
